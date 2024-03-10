@@ -10,7 +10,7 @@ import { Switch } from "../UI/Switch";
 function index() {
   const [checked, setChecked] = useState(false);
   return (
-    <nav className="sticky top-0 z-10 bg-transparent">
+    <nav className="sticky top-0 z-100 bg-transparent">
      <div className="max-w-5xl mx-auto ">
      <div className="flex items-center justify-between h-16 ">
       <span className="text-2xl text-gray-100 font-semibold">Logo</span>
