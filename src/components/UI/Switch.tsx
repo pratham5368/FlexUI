@@ -1,5 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import { useState } from "react";
+
 export const Switch = ({
   checked,
   setChecked,
@@ -7,13 +9,21 @@ export const Switch = ({
   checked: boolean,
   setChecked: (checked: boolean) => void,
 }) => {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    
+  };
   return (
+    <div className={'${darkMode && "dark"}'}>
     <form className="flex space-x-4  antialiased items-center">
       <label
         htmlFor="checkbox"
         className={twMerge(
           "h-7  px-1  flex items-center border border-transparent shadow-[inset_0px_0px_12px_rgba(0,0,0,0.25)] rounded-full w-[60px] relative cursor-pointer transition duration-200",
-          checked ? "bg-white-100" : "bg-slate-700 border-slate-500"
+          checked ? "bg-white-100" : "bg-cyan-500 border-white-700"
         )}
       >
         <motion.div
@@ -39,11 +49,13 @@ export const Switch = ({
           type="checkbox"
           checked={checked}
           onChange={(e) => setChecked(e.target.checked)}
+          onClick={toggleDarkMode}
           className="hidden"
           id="checkbox"
         />
       </label>
       
     </form>
+    </div>
   );
 };
