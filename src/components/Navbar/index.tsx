@@ -5,14 +5,14 @@ function index() {
 <div>
       
 
-<aside id="logo-sidebar" className="fixed top-0 left-10 z-0 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white   sm:translate-x-0 dark:bg-transparent  bg-opacity-5 backdrop-filter backdrop-blur-lg" aria-label="Sidebar">
-   <div className="h-full  overflow-y-auto scroll-smooth
+<aside id="logo-sidebar" className="fixed top-0 left-10 z-0 w-1/6 h-screen pt-20 transition-transform -translate-x-full bg-white   sm:translate-x-0 dark:bg-transparent  bg-opacity-5 backdrop-filter backdrop-blur-lg" aria-label="Sidebar">
+   <div className="h-full  overflow-y-auto scroll-smooth 
   [&::-webkit-scrollbar]:w-1
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:bg-gray-300
   dark:[&::-webkit-scrollbar-track]:bg-slate-700
   dark:[&::-webkit-scrollbar-thumb]:bg-slate-500">
-      <ul className="space-y-2 text-sm">
+      <ul className="space-y-2 text-sm " >
          <li>
             <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                
