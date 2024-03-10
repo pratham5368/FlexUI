@@ -1,4 +1,6 @@
 import React from 'react'
+import ThemeSwitch from '../ThemeSwitch';
+
 
 function index() {
   return (
@@ -7,6 +9,7 @@ function index() {
      <div className="flex items-center justify-between h-16">
       <span className="text-2xl text-gray-100 font-semibold">Logo</span>
       <div className="flex space-x-4 text-white-100">
+        <ThemeSwitch />
         <a href="#">Dashboard</a>
         <a href="#">About</a>
         <a href="#">Projects</a>
