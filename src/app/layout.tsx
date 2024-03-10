@@ -1,7 +1,9 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import Landing from "../components/Landing";
 import { Inter } from 'next/font/google'
 
 import ThemeProvider from './provider'
@@ -30,9 +32,18 @@ return (
 
 <html lang="en">
     <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem >   
+    <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2]  ">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_top,transparent_25%,black)]"></div>
+
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
+            <Header/>
+            <Navbar/>
+           {/*<Landing/>*/}
+   
             {children}
         </ThemeProvider>
+        </div>
     </body>
 </html>
 

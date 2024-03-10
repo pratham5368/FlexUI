@@ -5,8 +5,8 @@ function index() {
 <div>
       
 
-<aside id="logo-sidebar" className="fixed top-0 left-10 z-0 w-1/6 h-screen pt-20 transition-transform -translate-x-full bg-white   sm:translate-x-0 dark:bg-transparent  bg-opacity-5 backdrop-filter backdrop-blur-lg" aria-label="Sidebar">
-   <div className="h-full  overflow-y-auto scroll-smooth 
+<aside id="logo-sidebar" className="fixed top-0 left-10 z-0 w-1/6 h-screen pt-14 transition-transform -translate-x-full  sm:translate-x-0 dark:bg-transparent " aria-label="Sidebar">
+   <div className="h-full pt-3  overflow-y-auto scroll-smooth bg-white bg-opacity-5 backdrop-filter backdrop-blur-sm
   [&::-webkit-scrollbar]:w-1
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:bg-gray-300
