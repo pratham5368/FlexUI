@@ -1,7 +1,7 @@
 
 // To inform next js, this is a client component 
 "use client"; 
-  
+import Link from 'next/link'
 // Import useState from 'react' library 
 import { useState } from "react";
 import { Switch } from "../UI/Switch";
@@ -18,9 +18,9 @@ function index() {
 
       {/*<Switch checked={checked} setChecked={setChecked} />*/}
 
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <Link href="/installation">About</Link>
+        <Link href="#">Projects</Link>
+        <Link href="#">Contact</Link>
       </div>
     </div>
   </div>
